@@ -1,0 +1,14 @@
+server:
+  port: 8086
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/event_db
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-group
